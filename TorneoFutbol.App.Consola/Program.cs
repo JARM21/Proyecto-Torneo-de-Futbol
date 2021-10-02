@@ -10,6 +10,7 @@ namespace TorneoFutbol.App.Consola
     {
         //private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
         private static IRepositorioEquipos _repoEquipo = new RepositorioEquipos(new Persistencia.AppContext());
+        private static IRepositorioMunicipios _repoMunicipio = new RepositorioMunicipios();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");

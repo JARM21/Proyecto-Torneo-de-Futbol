@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
@@ -6,12 +7,8 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioMunicipios : IRepositorioMunicipios
     {
-        private readonly AppContext _appContext;
-        public RepositorioMunicipios(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+        
         Municipios IRepositorioMunicipios.AddMunicipio(Municipios municipio)
         {
             var MunicipioAdicionado = _appContext.Municipios.Add(municipio);
