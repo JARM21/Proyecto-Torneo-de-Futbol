@@ -11,6 +11,6 @@ namespace TorneoFutbol.App.Dominio
         // Dirección del estadio
         public string Direccion { get; set; }
         // Municipio al que pertenece 
-        public Municipios Municipio { get; set; } 
+        public Municipio Municipio { get; set; } 
     }
 }

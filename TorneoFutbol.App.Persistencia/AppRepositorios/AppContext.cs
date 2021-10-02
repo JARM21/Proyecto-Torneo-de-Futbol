@@ -10,7 +10,7 @@ namespace TorneoFutbol.App.Persistencia
         public DbSet<Estadios> Estadios{get; set;}
         public DbSet<InformacionPartido> InformacionPartido{get; set;}
         public DbSet<Jugadores> Jugadores{get; set;}
-        public DbSet<Municipios> Municipios{get; set;}
+        public DbSet<Municipio> Municipios{get; set;}
         public DbSet<Partidos> Partidos{get; set;}
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

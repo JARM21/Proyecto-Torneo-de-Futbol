@@ -3,7 +3,7 @@ using System;
 namespace TorneoFutbol.App.Dominio
 {
       
-    public class Municipios 
+    public class Municipio 
     {
         // Identificador único de cada SugerenciaCuidado
         public int Id { get; set; }

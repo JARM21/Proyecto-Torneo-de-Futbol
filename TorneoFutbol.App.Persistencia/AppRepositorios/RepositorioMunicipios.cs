@@ -9,7 +9,7 @@ namespace TorneoFutbol.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
         
-        Municipios IRepositorioMunicipios.AddMunicipio(Municipios municipio)
+        Municipio IRepositorioMunicipios.AddMunicipio(Municipio municipio)
         {
             var MunicipioAdicionado = _appContext.Municipios.Add(municipio);
             _appContext.SaveChanges();
@@ -25,18 +25,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Municipios> IRepositorioMunicipios.GetAllMunicipios()
+        IEnumerable<Municipio> IRepositorioMunicipios.GetAllMunicipios()
         {
             return _appContext.Municipios;
         }
 
-        Municipios IRepositorioMunicipios.GetMunicipio(int idMunicipio)
+        Municipio IRepositorioMunicipios.GetMunicipio(int idMunicipio)
         {
             return _appContext.Municipios.FirstOrDefault(m=>m.Id==idMunicipio);
             
         }
 
-        Municipios IRepositorioMunicipios.UpdateMunicipio(Municipios municipio)
+        Municipio IRepositorioMunicipios.UpdateMunicipio(Municipio municipio)
         {
             var municipioEncontrado=_appContext.Municipios.FirstOrDefault(m=>m.Id==municipio.Id);
             if(municipioEncontrado!=null)

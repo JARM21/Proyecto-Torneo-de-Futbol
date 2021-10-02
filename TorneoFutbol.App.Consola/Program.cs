@@ -8,19 +8,20 @@ namespace TorneoFutbol.App.Consola
 {
     class Program
     {
-        //private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
         private static IRepositorioEquipos _repoEquipo = new RepositorioEquipos(new Persistencia.AppContext());
         private static IRepositorioMunicipios _repoMunicipio = new RepositorioMunicipios();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddEquipos();
+            AddMunicipio();
+            //AddEquipos();
             //AddDirectoresTecnicos();
             //BuscarDirectoresTecnicos(1);
 
         }
 
-        /*private static void AddDirectoresTecnicos()
+        private static void AddDirectoresTecnicos()
         {
             var DirectoresTecnicos = new DirectoresTecnicos
             {
@@ -37,7 +38,7 @@ namespace TorneoFutbol.App.Consola
             var DirectoresTecnicos = _repoDirectorTecnico.GetDirectoresTecnicos(IdDirectoresTecnicos);
             Console.WriteLine(DirectoresTecnicos.Nombre + " " + DirectoresTecnicos.Documento);
         }
-        */
+        
         
         private static void AddEquipos()
         {
@@ -53,6 +54,17 @@ namespace TorneoFutbol.App.Consola
             };
 
             _repoEquipo.AddEquipos(Equipos);
+        }
+
+        private static void AddMunicipio()
+        {
+            var Municipios = new Municipios
+            {
+                Nombre = "Marinilla"
+               
+            };
+
+            _repoMunicipio.AddMunicipio(Municipios);
         }
     }
 
