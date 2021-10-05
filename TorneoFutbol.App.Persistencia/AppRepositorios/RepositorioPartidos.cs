@@ -7,7 +7,7 @@ namespace TorneoFutbol.App.Persistencia
     public class RepositorioPartidos : IRepositorioPartidos
     {
         private readonly AppContext _appContext;
-        public RepositorioPartido(AppContext appContext)
+        public RepositorioPartidos(AppContext appContext)
         {
             _appContext=appContext;
         }
@@ -16,7 +16,7 @@ namespace TorneoFutbol.App.Persistencia
         {
             var partidoAdicionado = _appContext.Partidos.Add(partidos);
             _appContext.SaveChanges();
-            return partidosAdicionado.Entity;
+            return partidoAdicionado.Entity;
         }
 
         void IRepositorioPartidos.DeletePartidos(int idPartidos)
@@ -52,7 +52,6 @@ namespace TorneoFutbol.App.Persistencia
                 partidoEncontrado.Estadio = partidoEncontrado.Estadio;
                 partidoEncontrado.Arbitro = partidoEncontrado.Arbitro;
                 partidoEncontrado.MarcadorFinal = partidoEncontrado.MarcadorFinal;
-                partidoEncontrado.informacionPartido = partidoEncontrado.InformacionPartido;
                 
                 _appContext.SaveChanges();
             }

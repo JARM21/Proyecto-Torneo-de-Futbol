@@ -7,7 +7,7 @@ namespace TorneoFutbol.App.Persistencia
     {   
         IEnumerable<Partidos> GetAllPartidos();
         Partidos AddPartidos(Partidos partidos);
-        Partidos UpdatePartidos(Partidos partidos);
+        Partidos UpdatePartido(Partidos partidos);
         void DeletePartidos(int partidos);
         Partidos GetPartido(int partido);
     }
