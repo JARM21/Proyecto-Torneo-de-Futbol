@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
@@ -12,7 +13,7 @@ namespace TorneoFutbol.App.Persistencia
             _appContext=appContext;
         }
 
-        Arbitros IRepositorioArbitros.AddArbitro(Arbitros arbitro)
+        Arbitro IRepositorioArbitros.AddArbitro(Arbitro arbitro)
         {
             var arbitroAdicionado = _appContext.Arbitros.Add(arbitro);
             _appContext.SaveChanges();
@@ -28,18 +29,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Arbitros> IRepositorioArbitros.GetAllArbitros()
+        IEnumerable<Arbitro> IRepositorioArbitros.GetAllArbitros()
         {
             return _appContext.Arbitros;
         }
 
-        Arbitros IRepositorioArbitros.GetArbitro(int idArbitro)
+        Arbitro IRepositorioArbitros.GetArbitro(int idArbitro)
         {
             return _appContext.Arbitros.FirstOrDefault(m=>m.Id==idArbitro);
             
         }
 
-        Arbitros IRepositorioArbitros.UpdateArbitro(Arbitros arbitro)
+        Arbitro IRepositorioArbitros.UpdateArbitro(Arbitro arbitro)
         {
             var arbitroEncontrado=_appContext.Arbitros.FirstOrDefault(m=>m.Id==arbitro.Id);
             if(arbitroEncontrado!=null)

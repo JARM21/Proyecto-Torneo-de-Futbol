@@ -14,7 +14,7 @@ namespace TorneoFutbol.App.Dominio
         public int Puntos { get; set; }
         public Municipio Municipio { get; set; }
         ///  Referencia a la lista de jugadores
-        public List<Jugadores> Jugadores { get; set; }
+        public List<Jugador> Jugadores { get; set; }
         public DirectoresTecnicos DirectorTecnico { get; set; }
     }
 }

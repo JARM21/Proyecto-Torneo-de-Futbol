@@ -1,7 +1,7 @@
 namespace TorneoFutbol.App.Dominio
 {
    
-    public class Jugadores
+    public class Jugador
     {
 
         public int Id { get; set; }
