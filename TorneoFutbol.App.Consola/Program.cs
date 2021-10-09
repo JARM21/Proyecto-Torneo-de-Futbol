@@ -58,7 +58,7 @@ namespace TorneoFutbol.App.Consola
 
         private static void AddMunicipio()
         {
-            var Municipios = new Municipios
+            var Municipios = new Municipio
             {
                 Nombre = "Marinilla"
                
