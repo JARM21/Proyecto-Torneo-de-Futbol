@@ -1,14 +1,4 @@
 ﻿@page
-@using TorneoFutbol.App.Dominio
 @model TorneoFutbol.App.Frontend.Pages.Jugadores.CreateModel
 @{
 }
-<h1>Nuevo Jugador</h1>
-<form method="post">
-    <div class="form-group">
-        <label asp-for="jugador.Nombre"></label>
-        <input asp-for="jugador.Nombre" class="form-control" placeholder="Ingrese el Nombre del Jugador">
-    </div>  
-    <button type="submit" class="btn btn-primary btn-block">Crear Jugador</button> 
-</form>
-<br><br><a class="btn btn-secondary" asp-page="./Index">Volver</a>

@@ -232,3 +232,7 @@ C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Frontend\obj\Debug\ne
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Details.cshtml.g.cs
 >>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Index.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Create.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Index.cshtml.g.cs

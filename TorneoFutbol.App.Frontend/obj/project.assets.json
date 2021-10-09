@@ -5737,27 +5737,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eslop\\.nuget\\packages\\": {}
+    "C:\\Users\\josue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "projectUniqueName": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
       "projectName": "TorneoFutbol.App.Frontend",
-      "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+      "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
       "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Frontend\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
-      "projectName": "TorneoFutbol.App.Frontend",
-      "projectPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\eslop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Frontend\\obj\\",
->>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
+      "outputPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eslop\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5769,19 +5761,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
+            "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
             },
-            "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj"
-=======
-            "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj"
-            },
-            "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj"
->>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
+            "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj"
             }
           }
         }
@@ -5813,7 +5797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

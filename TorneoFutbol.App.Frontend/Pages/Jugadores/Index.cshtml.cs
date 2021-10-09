@@ -1,4 +1,3 @@
-using System.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +12,15 @@ namespace TorneoFutbol.App.Frontend.Pages.Jugadores
     public class IndexModel : PageModel
     {
         private readonly IRepositorioJugadores _repoJugador;
-        public IEnumerable <Jugador> jugador {get; set;}
+        public IEnumerable <Jugador> jugadores {get; set;}
 
-        public IndexModel(IRepositorioJugadores repoJugador)
+        public IndexModel(IRepositorioJugadores repojugador)
         {
-            _repoJugador = repoJugador;
+            _repoJugador = repojugador;
         }
         public void OnGet()
         {
-            jugador = _repoJugador.GetAllJugadores();
+            jugadores = _repoJugador.GetAllJugador();
         }
     }
 }

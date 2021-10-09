@@ -9,15 +9,19 @@
     <thead class="thead-dark">
         <tr>
             <th scope="col">Nombre</th>
+            <th scope="col">Numero</th>
+            <th scope="col">Posicion</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var jugador in Model.jugador)
+        @foreach (var Jugador in Model.jugadores)
         {
             <tr>
-                <td>@jugador.Nombre</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a></td>
+                <td>@Jugador.Nombre</td>
+                <td>@Jugador.Numero</td>
+                <td>@Jugador.Posicion</td>
+                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@Jugador.Id">Detalle</a></td>
             </tr>
         }
         

@@ -1,4 +1,3 @@
-using System.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +13,6 @@ namespace TorneoFutbol.App.Frontend.Pages.Arbitros
     {
         private readonly IRepositorioArbitros _repoArbitro;
         public IEnumerable <Arbitro> arbitro {get; set;}
-
         public IndexModel(IRepositorioArbitros repoArbitro)
         {
             _repoArbitro = repoArbitro;

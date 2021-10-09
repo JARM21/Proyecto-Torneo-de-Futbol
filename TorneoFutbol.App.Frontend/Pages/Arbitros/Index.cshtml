@@ -9,6 +9,9 @@
     <thead class="thead-dark">
         <tr>
             <th scope="col">Nombre</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Colegio</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -17,6 +20,9 @@
         {
             <tr>
                 <td>@arbitro.Nombre</td>
+                <td>@arbitro.Documento</td>
+                <td>@arbitro.Telefono</td>
+                <td>@arbitro.Colegio</td>
                 <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@arbitro.Id">Detalle</a></td>
             </tr>
         }
