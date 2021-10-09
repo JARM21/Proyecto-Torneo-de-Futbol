@@ -5,10 +5,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioEstadios
     {   
-        IEnumerable<Estadios> GetAllEstadios();
-        Estadios AddEstadio(Estadios estadio);
-        Estadios UpdateEstadio(Estadios estadio);
+        IEnumerable<Estadio> GetAllEstadios();
+        Estadio AddEstadio(Estadio estadio);
+        Estadio UpdateEstadio(Estadio estadio);
         void DeleteEstadio(int idEstadio);
-        Estadios GetEstadio(int idEstadio);
+        Estadio GetEstadio(int idEstadio);
     }
 }

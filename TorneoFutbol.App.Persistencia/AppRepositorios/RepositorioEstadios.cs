@@ -6,13 +6,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioEstadios : IRepositorioEstadios
     {
-        private readonly AppContext _appContext;
-        public RepositorioEstadios(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
+        
 
-        Estadios IRepositorioEstadios.AddEstadio(Estadios estadio)
+        Estadio IRepositorioEstadios.AddEstadio(Estadio estadio)
         {
             var estadioAdicionado = _appContext.Estadios.Add(estadio);
             _appContext.SaveChanges();
@@ -28,18 +25,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Estadios> IRepositorioEstadios.GetAllEstadios()
+        IEnumerable<Estadio> IRepositorioEstadios.GetAllEstadios()
         {
             return _appContext.Estadios;
         }
 
-        Estadios IRepositorioEstadios.GetEstadio(int idEstadio)
+        Estadio IRepositorioEstadios.GetEstadio(int idEstadio)
         {
             return _appContext.Estadios.FirstOrDefault(e=>e.Id==idEstadio);
             
         }
 
-        Estadios IRepositorioEstadios.UpdateEstadio(Estadios estadio)
+        Estadio IRepositorioEstadios.UpdateEstadio(Estadio estadio)
         {
             var estadioEncontrado=_appContext.Estadios.FirstOrDefault(e=>e.Id==estadio.Id);
             if(estadioEncontrado!=null)

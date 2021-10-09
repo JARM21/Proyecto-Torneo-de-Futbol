@@ -8,8 +8,8 @@ namespace TorneoFutbol.App.Consola
 {
     class Program
     {
-        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico(new Persistencia.AppContext());
-        private static IRepositorioEquipos _repoEquipo = new RepositorioEquipos(new Persistencia.AppContext());
+        private static IRepositorioDirectorTecnico _repoDirectorTecnico = new RepositorioDirectorTecnico();
+        private static IRepositorioEquipos _repoEquipo = new RepositorioEquipos();
         private static IRepositorioMunicipios _repoMunicipio = new RepositorioMunicipios();
         static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace TorneoFutbol.App.Consola
 
         private static void AddDirectoresTecnicos()
         {
-            var DirectoresTecnicos = new DirectoresTecnicos
+            var DirectoresTecnicos = new DirectorTecnico
             {
                 Nombre = "Isabella",
                 Documento = "1232444",
@@ -42,7 +42,7 @@ namespace TorneoFutbol.App.Consola
         
         private static void AddEquipos()
         {
-            var Equipos = new Equipos
+            var Equipos = new Equipo
             {
                 Nombre = "Aguilas Doradas",
                 CantidadPartidosJugados = 0,

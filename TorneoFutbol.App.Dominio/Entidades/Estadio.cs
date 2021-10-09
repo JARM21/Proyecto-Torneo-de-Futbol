@@ -1,7 +1,7 @@
 namespace TorneoFutbol.App.Dominio
 {
    
-    public class Estadios
+    public class Estadio
     {
 
         // Identificador del estadio

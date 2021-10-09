@@ -2,7 +2,7 @@ using System.Collections.Generic;
 namespace TorneoFutbol.App.Dominio
 {
      
-    public class Equipos
+    public class Equipo
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -14,7 +14,7 @@ namespace TorneoFutbol.App.Dominio
         public int Puntos { get; set; }
         public Municipio Municipio { get; set; }
         ///  Referencia a la lista de jugadores
-        public List<Jugador> Jugadores { get; set; }
-        public DirectoresTecnicos DirectorTecnico { get; set; }
+        public List<Jugador> Jugador { get; set; }
+        public DirectorTecnico DirectorTecnico { get; set; }
     }
 }

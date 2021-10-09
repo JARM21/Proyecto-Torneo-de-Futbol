@@ -6,13 +6,10 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioEquipos : IRepositorioEquipos
     {
-        private readonly AppContext _appContext;
-        public RepositorioEquipos(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
+        
 
-        Equipos IRepositorioEquipos.AddEquipos(Equipos Equipos)
+        Equipo IRepositorioEquipos.AddEquipos(Equipo Equipos)
         {
             var EquipoAdicionado = _appContext.Equipos.Add(Equipos);
             _appContext.SaveChanges();
@@ -28,18 +25,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Equipos> IRepositorioEquipos.GetAllEquipos()
+        IEnumerable<Equipo> IRepositorioEquipos.GetAllEquipos()
         {
             return _appContext.Equipos;
         }
 
-        Equipos IRepositorioEquipos.GetEquipos(int IdEquipos)
+        Equipo IRepositorioEquipos.GetEquipos(int IdEquipos)
         {
             return _appContext.Equipos.FirstOrDefault(m=>m.Id==IdEquipos);
             
         }
 
-        Equipos IRepositorioEquipos.UpdateEquipos(Equipos Equipo)
+        Equipo IRepositorioEquipos.UpdateEquipos(Equipo Equipo)
         {
             var EquipoEncontrado=_appContext.Equipos.FirstOrDefault(m=>m.Id==Equipo.Id);
             if(EquipoEncontrado!=null)

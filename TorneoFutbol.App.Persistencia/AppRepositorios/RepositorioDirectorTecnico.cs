@@ -6,13 +6,9 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioDirectorTecnico : IRepositorioDirectorTecnico
     {
-        private readonly AppContext _appContext;
-        public RepositorioDirectorTecnico(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
-
-        DirectoresTecnicos IRepositorioDirectorTecnico.AddDirectoresTecnicos(DirectoresTecnicos DirectoresTecnicos)
+        private readonly AppContext _appContext = new AppContext();
+        
+        DirectorTecnico IRepositorioDirectorTecnico.AddDirectoresTecnicos(DirectorTecnico DirectoresTecnicos)
         {
             var DirectorTecnicoAdicionado = _appContext.DirectoresTecnicos.Add(DirectoresTecnicos);
             _appContext.SaveChanges();
@@ -28,18 +24,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<DirectoresTecnicos> IRepositorioDirectorTecnico.GetAllDirectoresTecnicos()
+        IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.GetAllDirectoresTecnicos()
         {
             return _appContext.DirectoresTecnicos;
         }
 
-        DirectoresTecnicos IRepositorioDirectorTecnico.GetDirectoresTecnicos(int IdDirectoresTecnicos)
+        DirectorTecnico IRepositorioDirectorTecnico.GetDirectoresTecnicos(int IdDirectoresTecnicos)
         {
             return _appContext.DirectoresTecnicos.FirstOrDefault(m=>m.Id==IdDirectoresTecnicos);
             
         }
 
-        DirectoresTecnicos IRepositorioDirectorTecnico.UpdateDirectoresTecnicos(DirectoresTecnicos DirectorTecnico)
+        DirectorTecnico IRepositorioDirectorTecnico.UpdateDirectoresTecnicos(DirectorTecnico DirectorTecnico)
         {
             var DirectorTecnicoEncontrado=_appContext.DirectoresTecnicos.FirstOrDefault(m=>m.Id==DirectorTecnico.Id);
             if(DirectorTecnicoEncontrado!=null)

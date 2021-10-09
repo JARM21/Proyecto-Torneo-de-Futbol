@@ -15,13 +15,13 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var Jugador in Model.jugadores)
+        @foreach (var jugador in Model.jugador)
         {
             <tr>
-                <td>@Jugador.Nombre</td>
-                <td>@Jugador.Numero</td>
-                <td>@Jugador.Posicion</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@Jugador.Id">Detalle</a></td>
+                <td>@jugador.Nombre</td>
+                <td>@jugador.Numero</td>
+                <td>@jugador.Posicion</td>
+                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a></td>
             </tr>
         }
         

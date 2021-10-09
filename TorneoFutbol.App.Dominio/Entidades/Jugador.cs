@@ -11,5 +11,7 @@ namespace TorneoFutbol.App.Dominio
         public int Numero { get; set; }
 
         public string Posicion { get; set; }
+
+        
     }
 }

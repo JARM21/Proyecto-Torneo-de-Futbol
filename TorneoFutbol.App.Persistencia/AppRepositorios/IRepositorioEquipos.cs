@@ -5,14 +5,14 @@ namespace TorneoFutbol.App.Persistencia
 {
     public interface IRepositorioEquipos
     {
-        IEnumerable<Equipos> GetAllEquipos();
+        IEnumerable<Equipo> GetAllEquipos();
 
-        Equipos AddEquipos(Equipos Equipos);
+        Equipo AddEquipos(Equipo Equipos);
 
-        Equipos UpdateEquipos(Equipos Equipos);
+        Equipo UpdateEquipos(Equipo Equipos);
 
         void DeleteEquipos(int IdEquipos);
 
-        Equipos GetEquipos(int IdEquipos);
+        Equipo GetEquipos(int IdEquipos);
     }
 }

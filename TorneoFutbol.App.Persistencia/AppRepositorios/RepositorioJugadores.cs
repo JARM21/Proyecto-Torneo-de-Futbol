@@ -7,12 +7,8 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioJugadores : IRepositorioJugadores
     {
-        private readonly AppContext _appContext;
-        public RepositorioJugadores(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+    
         Jugador IRepositorioJugadores.AddJugador(Jugador jugador)
         {
             var jugadorAdicionado = _appContext.Jugadores.Add(jugador);
@@ -29,7 +25,7 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Jugador> IRepositorioJugadores.GetAllJugadores()
+        IEnumerable<Jugador> IRepositorioJugadores.GetAllJugador()
         {
             return _appContext.Jugadores;
         }
