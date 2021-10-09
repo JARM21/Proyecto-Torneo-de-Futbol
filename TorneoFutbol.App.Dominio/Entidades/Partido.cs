@@ -3,7 +3,7 @@ using System;
 namespace TorneoFutbol.App.Dominio
 {
      
-    public class Partidos
+    public class Partido
     {
         public int Id { get; set; }
         public DateTime FechaYHora { get; set; }

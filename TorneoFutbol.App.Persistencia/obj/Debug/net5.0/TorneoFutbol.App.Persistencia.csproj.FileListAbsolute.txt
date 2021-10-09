@@ -17,7 +17,6 @@ C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.Ap
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.genruntimeconfig.cache
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.deps.json
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.runtimeconfig.json
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\bin\Debug\net5.0\TorneoFutbol.App.Persistencia.runtimeconfig.dev.json
@@ -56,7 +55,6 @@ C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Persistencia\obj\Debu
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.pdb
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.genruntimeconfig.cache
 >>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
-=======
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.csproj.AssemblyReference.cache
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Persistencia\obj\Debug\net5.0\TorneoFutbol.App.Persistencia.AssemblyInfoInputs.cache

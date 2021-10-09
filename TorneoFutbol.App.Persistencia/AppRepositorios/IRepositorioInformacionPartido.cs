@@ -10,6 +10,6 @@ namespace TorneoFutbol.App.Persistencia
         InformacionPartido UpdateInformacionPartido(InformacionPartido informacionPartido);
         void DeleteInformacionPartido(int idInformacionPartido);
         InformacionPartido GetInformacionPartido(int idInformacionPartido);
-        Partidos AsignPartido(int idInformacionPartido, int idPartido);
+        Partido AsignPartido(int idInformacionPartido, int idPartido);
     }
 }

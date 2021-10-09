@@ -9,6 +9,6 @@ namespace TorneoFutbol.App.Dominio
         public Eventos Evento { get; set; }
         public int Minuto { get; set; }
         public Jugador JugadorInvolucrado { get; set; }
-        public Partidos Partido { get; set; }
+        public Partido Partido { get; set; }
     }
 }

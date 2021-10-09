@@ -6,11 +6,8 @@ namespace TorneoFutbol.App.Persistencia
 {
     public class RepositorioInformacionPartido : IRepositorioInformacionPartido
     {
-        private readonly AppContext _appContext;
-        public RepositorioInformacionPartido(AppContext appContext)
-        {
-            _appContext=appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
+        
 
         InformacionPartido IRepositorioInformacionPartido.AddInformacionPartido(InformacionPartido informacionPartido)
         {
@@ -54,7 +51,7 @@ namespace TorneoFutbol.App.Persistencia
             return informacionPartidoEncontrado;
         }
 
-        Partidos IRepositorioInformacionPartido.AsignPartido(int idInformacionPartido, int idPartido)
+        Partido IRepositorioInformacionPartido.AsignPartido(int idInformacionPartido, int idPartido)
         {
             var informacionPartidoEncontrado = _appContext.InformacionPartido.Find(idInformacionPartido);
             if(informacionPartidoEncontrado != null)

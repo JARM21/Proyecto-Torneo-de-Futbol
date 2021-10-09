@@ -11,7 +11,6 @@ C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.Ap
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.deps.json
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.dll
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto clonado del Edward\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
@@ -38,7 +37,6 @@ C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Dominio\obj\Debug\net
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
 C:\Users\eslop\Documents\clon repositorio\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
 >>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
-=======
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.deps.json
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.dll
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
