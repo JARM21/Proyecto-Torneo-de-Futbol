@@ -2,3 +2,16 @@
 @model TorneoFutbol.App.Frontend.Pages.Partidos.DetailsModel
 @{
 }
+<h1>Detalle de los Partidos</h1>
+<table class="table table-striped">
+        <tr>
+            <th scope="col">MarcadorInicialLocal</th>
+            <th scope="col">MarcadorInicialVisitante</th>
+            <th scope="col">MarcadorFinal</th>
+            <td>@Model.partido.MarcadorInicialLocal</td>
+            <td>@Model.partido.MarcadorInicialVisitante</td>
+            <td>@Model.partido.MarcadorFinal</td>
+        </tr>
+</table>
+
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
