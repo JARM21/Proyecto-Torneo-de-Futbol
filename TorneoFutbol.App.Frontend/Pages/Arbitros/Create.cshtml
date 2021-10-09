@@ -1,4 +1,26 @@
 ﻿@page
+@using TorneoFutbol.App.Dominio
 @model TorneoFutbol.App.Frontend.Pages.Arbitros.CreateModel
 @{
 }
+<h1>Nuevo Arbitro</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="arbitro.Nombre"></label>
+        <input asp-for="arbitro.Nombre" class="form-control" placeholder="Ingrese el Nombre del Arbitro">
+    </div> 
+    <div class="form-group">
+        <label asp-for="arbitro.Documento"></label>
+        <input asp-for="arbitro.Documento" class="form-control" placeholder="Ingrese el Documento del Arbitro">
+    </div> 
+    <div class="form-group">
+        <label asp-for="arbitro.Telefono"></label>
+        <input asp-for="arbitro.Telefono" class="form-control" placeholder="Ingrese el Telefono del Arbitro">
+    </div> 
+    <div class="form-group">
+        <label asp-for="arbitro.Colegio"></label>
+        <input asp-for="arbitro.Colegio" class="form-control" placeholder="Ingrese el Colegio del Arbitro">
+    </div>  
+    <button type="submit" class="btn btn-primary btn-block">Crear Arbitro</button> 
+</form>
+<br><br><a class="btn btn-secondary" asp-page="./Index">Volver</a>
