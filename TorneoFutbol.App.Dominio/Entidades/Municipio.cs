@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TorneoFutbol.App.Dominio
 {
@@ -8,6 +9,7 @@ namespace TorneoFutbol.App.Dominio
         // Identificador único de cada SugerenciaCuidado
         public int Id { get; set; }
         /// Nombre del municipio
+        [Required(ErrorMessage = "El Nombre es Obligatorio")]
         public string Nombre  { get; set; }
         
     }
