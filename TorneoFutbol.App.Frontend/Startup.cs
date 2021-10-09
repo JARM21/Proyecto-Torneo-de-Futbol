@@ -31,6 +31,7 @@ namespace TorneoFutbol.App.Frontend
             services.AddSingleton<IRepositorioJugadores, RepositorioJugadores>();
             services.AddSingleton<IRepositorioArbitros, RepositorioArbitros>();
             services.AddSingleton<IRepositorioDirectorTecnico, RepositorioDirectorTecnico>();
+            services.AddSingleton<IRepositorioEquipos, RepositorioEquipos>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
