@@ -246,3 +246,4 @@ C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.Ap
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Index.cshtml.g.cs
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\InformacionPartidos\Create.cshtml.g.cs
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\InformacionPartidos\Index.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\InformacionPartidos\Details.cshtml.g.cs
