@@ -1,0 +1,25 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Equipos.DetailsModel
+@{
+}
+<h1>Detalles de los Equipos</h1>
+<table class="table table-striped">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">CantidadPartidosJugados</th>
+            <th scope="col">CantidadPartidosGanados</th>
+            <th scope="col">CantidadPartidosEmpatados</th>
+            <th scope="col">GolesAFavor</th>
+            <th scope="col">GolesEnContra</th>
+            <th scope="col">Puntos</th>
+            <td>@Model.equipo.Nombre</td>
+            <td>@Model.equipo.CantidadPartidosJugados</td>
+            <td>@Model.equipo.CantidadPartidosGanados</td>
+            <td>@Model.equipo.CantidadPartidosEmpatados</td>
+            <td>@Model.equipo.GolesAFavor</td>
+            <td>@Model.equipo.GolesEnContra</td>
+            <td>@Model.equipo.Puntos</td>
+        </tr>
+</table>
+
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
