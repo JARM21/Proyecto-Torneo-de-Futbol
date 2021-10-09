@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
@@ -12,7 +13,7 @@ namespace TorneoFutbol.App.Persistencia
             _appContext=appContext;
         }
 
-        Jugadores IRepositorioJugadores.AddJugador(Jugadores jugador)
+        Jugador IRepositorioJugadores.AddJugador(Jugador jugador)
         {
             var jugadorAdicionado = _appContext.Jugadores.Add(jugador);
             _appContext.SaveChanges();
@@ -28,18 +29,18 @@ namespace TorneoFutbol.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Jugadores> IRepositorioJugadores.GetAllJugadores()
+        IEnumerable<Jugador> IRepositorioJugadores.GetAllJugadores()
         {
             return _appContext.Jugadores;
         }
 
-        Jugadores IRepositorioJugadores.GetJugador(int idJugador)
+        Jugador IRepositorioJugadores.GetJugador(int idJugador)
         {
             return _appContext.Jugadores.FirstOrDefault(e=>e.Id==idJugador);
             
         }
 
-        Jugadores IRepositorioJugadores.UpdateJugador(Jugadores jugador)
+        Jugador IRepositorioJugadores.UpdateJugador(Jugador jugador)
         {
             var jugadorEncontrado=_appContext.Jugadores.FirstOrDefault(e=>e.Id==jugador.Id);
             if(jugadorEncontrado!=null)

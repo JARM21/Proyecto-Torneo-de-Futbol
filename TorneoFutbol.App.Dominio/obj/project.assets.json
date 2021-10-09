@@ -8,19 +8,27 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\josue\\.nuget\\packages\\": {}
+    "C:\\Users\\eslop\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "projectName": "TorneoFutbol.App.Dominio",
       "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "projectName": "TorneoFutbol.App.Dominio",
+      "projectPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\eslop\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eslop\\Documents\\clon repositorio\\TorneoFutbol.App.Dominio\\obj\\",
+>>>>>>> cdf1d1a3926bd0ea3bf73adc0eaf954cb72e069d
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\eslop\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
