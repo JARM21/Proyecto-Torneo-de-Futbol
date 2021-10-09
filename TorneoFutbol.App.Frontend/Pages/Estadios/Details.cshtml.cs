@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbol.App.Dominio;
 using TorneoFutbol.App.Persistencia;
 
-namespace TorneoFutbol.App.Frontend.Pages.Partidos
+namespace TorneoFutbol.App.Frontend.Pages.Estadios
 {
     public class DetailsModel : PageModel
     {
-        private readonly IRepositorioPartidos _repoPartido;
-        public Partido partido {get; set;}
-        public DetailsModel(IRepositorioPartidos repoPartido)
+        private readonly IRepositorioEstadios _repoEstadio;
+        public Estadio estadio {get; set;}
+        public DetailsModel(IRepositorioEstadios repoEstadio)
         {
-            _repoPartido = repoPartido;
+            _repoEstadio = repoEstadio;
         }
         public IActionResult OnGet(int id)
         {
-            partido = _repoPartido.GetPartido(id);
-            if (partido == null)
+            estadio = _repoEstadio.GetEstadio(id);
+            if (estadio == null)
             {
                 return NotFound();
             }
