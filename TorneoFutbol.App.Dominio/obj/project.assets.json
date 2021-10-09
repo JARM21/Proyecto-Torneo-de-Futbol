@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "projectName": "TorneoFutbol.App.Dominio",
-      "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
+      "projectPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\TorneoFutbol.App.Dominio.csproj",
       "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Dominio\\obj\\",
+      "outputPath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto clonado del Edward\\Proyecto-Torneo-de-Futbol\\TorneoFutbol.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config"
