@@ -6,20 +6,43 @@
 <table class="table table-striped">
         <tr>
             <th scope="col">Nombre</th>
-            <th scope="col">CantidadPartidosJugados</th>
-            <th scope="col">CantidadPartidosGanados</th>
-            <th scope="col">CantidadPartidosEmpatados</th>
-            <th scope="col">GolesAFavor</th>
-            <th scope="col">GolesEnContra</th>
-            <th scope="col">Puntos</th>
             <td>@Model.equipo.Nombre</td>
+        </tr>
+        <tr>
+            <th scope="col">CantidadPartidosJugados</th>
             <td>@Model.equipo.CantidadPartidosJugados</td>
+        </tr>
+        <tr>
+            <th scope="col">CantidadPartidosGanados</th>
             <td>@Model.equipo.CantidadPartidosGanados</td>
+
+        </tr>   
+        <tr>
+            <th scope="col">CantidadPartidosEmpatados</th>
             <td>@Model.equipo.CantidadPartidosEmpatados</td>
+        </tr>   
+            
+        <tr>
+            <th scope="col">GolesAFavor</th>
             <td>@Model.equipo.GolesAFavor</td>
+        </tr>    
+        <tr>
+            <th scope="col">GolesEnContra</th>
             <td>@Model.equipo.GolesEnContra</td>
+        </tr>
+        <tr>
+            <th scope="col">Puntos</th>
             <td>@Model.equipo.Puntos</td>
         </tr>
+            
+           
+            
+            
+            
+            
+            
+            
+        
 </table>
 
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>
