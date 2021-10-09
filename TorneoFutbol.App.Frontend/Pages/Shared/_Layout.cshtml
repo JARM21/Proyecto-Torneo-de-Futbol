@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - TorneoFutbol.App.Frontend</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Estilos.css" />
 </head>
 <body>
     <header>
@@ -24,35 +25,34 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Municipios/Index">Municipios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Jugadores/Index">Jugadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Arbitros/Index">Arbitros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/DirectoresTecnicos/Index">DirectoresTecnicos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Equipos/Index">Equipos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Estadios/Index">Estadios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Partidos/Index">Partidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/InformacionPartidos/Index">Informacion de los Partidos</a>
-                        </li>
+                
                         
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    
+                    <a id = "contmenumunicipios" asp-area="" asp-page="/Municipios/Index">Municipios</a>
+                    <a id = "contmenujugadores" asp-area="" asp-page="/Jugadores/Index">Jugadores</a>
+                    <a id = "contmenuarbitros" asp-area="" asp-page="/Arbitros/Index">Arbitros</a>
+                    <a id = "contmenudirtecnicos" asp-area="" asp-page="/DirectoresTecnicos/Index">DirectoresTecnicos</a>
+                    <a id = "contmenuequipos" asp-area="" asp-page="/Equipos/Index">Equipos</a>
+                    <a id = "contmenuestadios" asp-area="" asp-page="/Estadios/Index">Estadios</a>
+                    <a id = "contmenupartidos" asp-area="" asp-page="/Partidos/Index">Partidos</a>
+                    <a id = "contmenuinfopartidos" asp-area="" asp-page="/InformacionPartidos/Index">Informacion de los Partidos</a>
+                  
+                </nav>
+                <label id = "xmenu" for="btn-menu">✖️</label>
+            </div>
+        </div>    
     </header>
     <div class="container">
         <main role="main" class="pb-3">
