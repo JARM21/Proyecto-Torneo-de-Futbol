@@ -48,6 +48,22 @@
             }
             
         </tr> 
+        <tr>
+            <th scope="col">Estadio</th>
+            @if (Model.partido.Estadio == null)
+            {
+                <th>
+                    <a class="btn btn-secondary" asp-page="./AddEstadios" asp-route-id="@Model.partido.Id">
+                        Asignar Estadio
+                    </a>
+                </th>
+            }
+            else
+            {
+                <td>@Model.partido.Estadio.Nombre</td>
+            }
+            
+        </tr> 
             
         
 </table>
