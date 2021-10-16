@@ -257,3 +257,5 @@ C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.Ap
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddDirectorTecnico.cshtml.g.cs
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddMunicipio.cshtml.g.cs
 C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddJugador.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\AddMunicipio.cshtml.g.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol\TorneoFutbol.App\TorneoFutbol.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Edit.cshtml.g.cs

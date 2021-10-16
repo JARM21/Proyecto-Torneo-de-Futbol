@@ -17,7 +17,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Estadios
         {
             _repoEstadio = repoEstadio;
         }
-        public void OnGet(int Id)
+        public IActionResult OnGet(int Id)
         {
             estadio = _repoEstadio.GetEstadio(Id);
             if (estadio == null)
