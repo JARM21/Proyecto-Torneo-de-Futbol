@@ -63,6 +63,22 @@
                 <td>@Model.partido.Estadio.Nombre</td>
             }
             
+        </tr>
+        <tr>
+            <th scope="col">Arbitro</th>
+            @if (Model.partido.Arbitro == null)
+            {
+                <th>
+                    <a class="btn btn-secondary" asp-page="./AddArbitros" asp-route-id="@Model.partido.Id">
+                        Asignar Arbitro
+                    </a>
+                </th>
+            }
+            else
+            {
+                <td>@Model.partido.Arbitro.Nombre</td>
+            }
+            
         </tr> 
             
         
