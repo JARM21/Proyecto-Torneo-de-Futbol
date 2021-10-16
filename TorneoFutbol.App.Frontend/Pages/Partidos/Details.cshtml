@@ -32,6 +32,22 @@
             }
             
         </tr> 
+        <tr>
+            <th scope="col">Equipo Visitante</th>
+            @if (Model.partido.EquipoVisitante == null)
+            {
+                <th>
+                    <a class="btn btn-secondary" asp-page="./AddEquipoVisitante" asp-route-id="@Model.partido.Id">
+                        Asignar Equipo Visitante
+                    </a>
+                </th>
+            }
+            else
+            {
+                <td>@Model.partido.EquipoVisitante.Nombre</td>
+            }
+            
+        </tr> 
             
         
 </table>
