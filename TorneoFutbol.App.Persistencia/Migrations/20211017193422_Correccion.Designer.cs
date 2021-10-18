@@ -10,8 +10,8 @@ using TorneoFutbol.App.Persistencia;
 namespace TorneoFutbol.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211009110011_corregidaconpartidos")]
-    partial class corregidaconpartidos
+    [Migration("20211017193422_Correccion")]
+    partial class Correccion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,15 +29,19 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Colegio")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Documento")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -53,12 +57,15 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Documento")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -170,13 +177,18 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                     b.Property<int?>("EquipoId")
                         .HasColumnType("int");
 
+                    b.Property<int>("EquiposId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Numero")
                         .HasColumnType("int");
 
                     b.Property<string>("Posicion")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -194,6 +206,7 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

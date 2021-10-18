@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbol.App.Persistencia
 {
@@ -32,7 +33,12 @@ namespace TorneoFutbol.App.Persistencia
 
         Jugador IRepositorioJugadores.GetJugador(int idJugador)
         {
-            return _appContext.Jugadores.FirstOrDefault(e=>e.Id==idJugador);
+            var jugador = _appContext.Jugadores
+                .Where(j => j.Id == idJugador)
+                .Include(j => j.Equipo)
+                .FirstOrDefault();
+            return jugador;
+            //return _appContext.Jugadores.FirstOrDefault(e=>e.Id==idJugador);
             
         }
 
@@ -48,6 +54,20 @@ namespace TorneoFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return jugadorEncontrado;
+        }
+
+        Equipo IRepositorioJugadores.AsignarEquipo(int idJugador, int idEquipo)
+        {
+            var jugadorEncontrado = _appContext.Jugadores.Find(idJugador);
+            if (jugadorEncontrado != null)
+            { var equipoEncontrado = _appContext.Equipos.Find(idEquipo);
+            if (equipoEncontrado != null)
+            { jugadorEncontrado.Equipo = equipoEncontrado;
+            _appContext.SaveChanges();
+            }
+            return equipoEncontrado;
+            }
+            return null; 
         }
     }
 }

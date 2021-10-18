@@ -2,23 +2,28 @@
 
 namespace TorneoFutbol.App.Persistencia.Migrations
 {
-    public partial class correccion : Migration
+    public partial class Correccion : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Jugadores_Equipos_EquiposId",
+                name: "FK_Jugadores_Equipos_EquipoId",
                 table: "Jugadores");
 
-            migrationBuilder.RenameColumn(
+            migrationBuilder.AlterColumn<int>(
+                name: "EquipoId",
+                table: "Jugadores",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
+
+            migrationBuilder.AddColumn<int>(
                 name: "EquiposId",
                 table: "Jugadores",
-                newName: "EquipoId");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_Jugadores_EquiposId",
-                table: "Jugadores",
-                newName: "IX_Jugadores_EquipoId");
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Jugadores_Equipos_EquipoId",
@@ -35,23 +40,27 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 name: "FK_Jugadores_Equipos_EquipoId",
                 table: "Jugadores");
 
-            migrationBuilder.RenameColumn(
+            migrationBuilder.DropColumn(
+                name: "EquiposId",
+                table: "Jugadores");
+
+            migrationBuilder.AlterColumn<int>(
                 name: "EquipoId",
                 table: "Jugadores",
-                newName: "EquiposId");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_Jugadores_EquipoId",
-                table: "Jugadores",
-                newName: "IX_Jugadores_EquiposId");
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Jugadores_Equipos_EquiposId",
+                name: "FK_Jugadores_Equipos_EquipoId",
                 table: "Jugadores",
-                column: "EquiposId",
+                column: "EquipoId",
                 principalTable: "Equipos",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+                onDelete: ReferentialAction.Cascade);
         }
     }
 }

@@ -10,5 +10,6 @@ namespace TorneoFutbol.App.Persistencia
         Estadio UpdateEstadio(Estadio estadio);
         void DeleteEstadio(int idEstadio);
         Estadio GetEstadio(int idEstadio);
+        Municipio AsignarMunicipio(int IdEstadio, int IdMunicipio);
     }
 }

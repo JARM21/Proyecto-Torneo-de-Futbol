@@ -13,7 +13,8 @@ namespace TorneoFutbol.App.Dominio
         public int MarcadorInicialVisitante { get; set; }
         public Estadio Estadio { get; set; }
         public Arbitro Arbitro { get; set; }
-        public int MarcadorFinal { get; set; }
+        public int MarcadorFinalLocal { get; set; }
+        //public int MarcadorFinalVisitante { get; set; }
         public List<InformacionPartido> InformacionPartido { get; set; }
     }
 }

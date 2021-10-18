@@ -13,10 +13,10 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Colegio = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Colegio = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,9 +29,9 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -44,7 +44,7 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -111,20 +111,20 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Numero = table.Column<int>(type: "int", nullable: false),
-                    Posicion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EquiposId = table.Column<int>(type: "int", nullable: true)
+                    Posicion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EquipoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Jugadores", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Jugadores_Equipos_EquiposId",
-                        column: x => x.EquiposId,
+                        name: "FK_Jugadores_Equipos_EquipoId",
+                        column: x => x.EquipoId,
                         principalTable: "Equipos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -180,7 +180,7 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                     Evento = table.Column<int>(type: "int", nullable: false),
                     Minuto = table.Column<int>(type: "int", nullable: false),
                     JugadorInvolucradoId = table.Column<int>(type: "int", nullable: true),
-                    PartidosId = table.Column<int>(type: "int", nullable: true)
+                    PartidoId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -192,8 +192,8 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_InformacionPartido_Partidos_PartidosId",
-                        column: x => x.PartidosId,
+                        name: "FK_InformacionPartido_Partidos_PartidoId",
+                        column: x => x.PartidoId,
                         principalTable: "Partidos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -220,14 +220,14 @@ namespace TorneoFutbol.App.Persistencia.Migrations
                 column: "JugadorInvolucradoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_InformacionPartido_PartidosId",
+                name: "IX_InformacionPartido_PartidoId",
                 table: "InformacionPartido",
-                column: "PartidosId");
+                column: "PartidoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Jugadores_EquiposId",
+                name: "IX_Jugadores_EquipoId",
                 table: "Jugadores",
-                column: "EquiposId");
+                column: "EquipoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Partidos_ArbitroId",

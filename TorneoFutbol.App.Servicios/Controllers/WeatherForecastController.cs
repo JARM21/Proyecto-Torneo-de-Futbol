@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace TorneoFutbol.App.Servivios.Controllers
+namespace TorneoFutbol.App.Servicios.Controllers
 {
     [ApiController]
     [Route("[controller]")]

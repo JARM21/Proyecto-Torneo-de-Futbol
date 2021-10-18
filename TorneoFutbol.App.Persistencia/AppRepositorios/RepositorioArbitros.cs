@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbol.App.Persistencia
 {
@@ -44,6 +45,8 @@ namespace TorneoFutbol.App.Persistencia
             {
                 arbitroEncontrado.Nombre = arbitro.Nombre;
                 arbitroEncontrado.Documento = arbitro.Documento;
+                arbitroEncontrado.Telefono = arbitro.Telefono;
+                arbitroEncontrado.Colegio = arbitro.Colegio;
                 _appContext.SaveChanges();
             }
             return arbitroEncontrado;

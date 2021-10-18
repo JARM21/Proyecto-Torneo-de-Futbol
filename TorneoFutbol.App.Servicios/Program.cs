@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace TorneoFutbol.App.Servivios
+namespace TorneoFutbol.App.Servicios
 {
     public class Program
     {

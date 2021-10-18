@@ -1,6 +1,6 @@
 using System;
 
-namespace TorneoFutbol.App.Servivios
+namespace TorneoFutbol.App.Servicios
 {
     public class WeatherForecast
     {

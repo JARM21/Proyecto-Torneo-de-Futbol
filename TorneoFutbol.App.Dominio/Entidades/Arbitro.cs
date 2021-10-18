@@ -7,7 +7,7 @@ namespace TorneoFutbol.App.Dominio
     {
 
         public int Id { get; set; }
-        [Required(ErrorMessage = "El Numero es Obligatorio")]
+        [Required(ErrorMessage = "El Nombre es Obligatorio")]
         public string Nombre { get; set; }
         [Required(ErrorMessage = "El Documento es Obligatorio")]
 

@@ -22,7 +22,10 @@
                 <td>@directortecnico.Nombre</td>
                 <td>@directortecnico.Documento</td>
                 <td>@directortecnico.Telefono</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@directortecnico.Id">Detalle</a></td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@directortecnico.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@directortecnico.Id">Editar</a>
+                </td>
             </tr>
         }
         

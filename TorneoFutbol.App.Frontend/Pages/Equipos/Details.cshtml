@@ -64,18 +64,6 @@
             }
             
         </tr>     
-        <tr>
-             <th scope="col">Jugadores</th>
-             <td>
-                 <ul>
-                     @foreach (var jugador in Model.equipo.Jugadores)
-                     {
-                        <li>@jugador.Nombre = @jugador.Posicion</li>     
-                     }
-                 </ul>
-                  <a class="btn btn-secondary" asp-page="./AddJugador" asp-route-id="@Model.equipo.Id">Asignar Jugador</a>
-             </td>
-        </tr>   
         
 </table>
 

@@ -1,0 +1,46 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Partidos.EditModel
+@{
+}
+<h1>Actualizar Partido</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Partido.Id"></label>
+        <input asp-for="Partido.Id" class="form-control" readonly>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Partido.FechaYHora"></label>
+        <input asp-for="Partido.FechaYHora" class="form-control" placeholder="Ingrese la Fecha Y Hora del Partido">
+        <span class="text-danger" asp-validation-for="Partido.FechaYHora"></span>
+    </div>  
+    <div class="form-group">
+        <label for="IdEstadio">Estadio</label>
+        <select name="IdEstadio" id="IdEstadio" name = "IdEstadio" class="form-control">
+            @foreach (var estadio in Model.estadio)
+            {
+                <option value = "@estadio.Id">@estadio.Nombre</option>
+            }
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="IdArbitro">Arbitro</label>
+        <select name="IdArbitro" id="IdArbitro" name = "IdArbitro" class="form-control">
+            @foreach (var arbitro in Model.arbitro)
+            {
+                <option value = "@arbitro.Id">@arbitro.Nombre</option>
+            }
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Partido.MarcadorFinalLocal"></label>
+        <input asp-for="Partido.MarcadorFinalLocal" class="form-control" placeholder="Ingrese el marcador final del Partido">
+        <span class="text-danger" asp-validation-for="Partido.MarcadorFinalLocal"></span>
+    </div> 
+    <button type="submit" class="btn btn-primary btn-block">Actualizar Partido</button> 
+</form>
+<br><br><a class="btn btn-secondary" asp-page="./Index">Volver</a>
+
+
+

@@ -34,9 +34,9 @@ namespace TorneoFutbol.App.Persistencia
         public Equipo GetEquipos(int IdEquipos)
         {
             var equipo = _appContext.Equipos
-                .Where(p => p.Id == IdEquipos)
-                .Include(p => p.Municipio)
-                .Include(p => p.DirectorTecnico)
+                .Where(e => e.Id == IdEquipos)
+                .Include(e => e.Municipio)
+                .Include(e => e.DirectorTecnico)
                 .FirstOrDefault();
             return equipo;
             
@@ -50,6 +50,7 @@ namespace TorneoFutbol.App.Persistencia
                 EquipoEncontrado.Nombre = Equipo.Nombre;
                 EquipoEncontrado.CantidadPartidosJugados = Equipo.CantidadPartidosJugados;
                 EquipoEncontrado.CantidadPartidosEmpatados = Equipo.CantidadPartidosEmpatados;
+                EquipoEncontrado.CantidadPartidosGanados = Equipo.CantidadPartidosGanados;
                 EquipoEncontrado.GolesAFavor = Equipo.GolesAFavor;
                 EquipoEncontrado.GolesEnContra = Equipo.GolesEnContra;
                 EquipoEncontrado.Puntos = Equipo.Puntos;
@@ -61,7 +62,8 @@ namespace TorneoFutbol.App.Persistencia
         }
 
         Municipio IRepositorioEquipos.AsignarMunicipio(int IdEquipo, int IdMunicipio)
-        { var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
+        { 
+            var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
             if (equipoEncontrado != null)
             { var municipioEncontrado = _appContext.Municipios.Find(IdMunicipio);
             if (municipioEncontrado != null)
@@ -74,7 +76,8 @@ namespace TorneoFutbol.App.Persistencia
         }
 
         DirectorTecnico IRepositorioEquipos.AsignarDirectorTecnico(int IdEquipo, int IdDirectorTecnico)
-        { var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
+        { 
+            var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
             if (equipoEncontrado != null)
             { var directortecnicoEncontrado = _appContext.DirectoresTecnicos.Find(IdDirectorTecnico);
             if (directortecnicoEncontrado != null)

@@ -20,6 +20,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Partidos
         public void OnGet()
         {
             partido = _repoPartido.GetAllPartidos();
+            
         }
     }
 }

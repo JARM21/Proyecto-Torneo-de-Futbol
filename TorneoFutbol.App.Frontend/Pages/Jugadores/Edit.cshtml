@@ -1,0 +1,28 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Jugadores.EditModel
+@{
+}
+<h1>Actualizar Jugador</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Jugador.Id"></label>
+        <input asp-for="Jugador.Id" class="form-control" readonly>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Jugador.Nombre"></label>
+        <input asp-for="Jugador.Nombre" class="form-control" placeholder="Ingrese el Nombre del Jugador">
+        <span class="text-danger" asp-validation-for="Jugador.Nombre"></span>
+    </div>  
+    <div class="form-group">
+        <label asp-for="Jugador.Numero"></label>
+        <input asp-for="Jugador.Numero" class="form-control" placeholder="Ingrese el Numero del Jugador">
+        <span class="text-danger" asp-validation-for="Jugador.Numero"></span>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Jugador.Posicion"></label>
+        <input asp-for="Jugador.Posicion" class="form-control" placeholder="Ingrese la posicion del Jugador">
+        <span class="text-danger" asp-validation-for="Jugador.Posicion"></span>
+    </div>    
+    <button type="submit" class="btn btn-primary btn-block">Actualizar Jugador</button> 
+</form>
+<br><br><a class="btn btn-secondary" asp-page="./Index">Volver</a>

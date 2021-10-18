@@ -26,6 +26,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Partidos
             partido = _repoPartido.GetPartido(Id);
             estadio = _repoEstadio.GetAllEstadios();
         }
+        
         public IActionResult OnPost(int IdPartido, int IdEstadio)
         {
             _repoPartido.AsignarEstadio(IdPartido, IdEstadio);

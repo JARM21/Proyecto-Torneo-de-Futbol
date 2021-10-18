@@ -26,7 +26,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Estadios
             estadio = _repoEstadio.GetEstadio(Id);
             municipios = _repoMunicipio.GetAllMunicipios();
         }
-
+        
         public IActionResult OnPost(int IdEstadio, int IdMunicipio)
         {
             _repoEstadio.AsignarMunicipio(IdEstadio, IdMunicipio);

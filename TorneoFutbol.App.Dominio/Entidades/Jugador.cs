@@ -12,10 +12,11 @@ namespace TorneoFutbol.App.Dominio
         [Required(ErrorMessage = "El Numero es Obligatorio")]
 
         public int Numero { get; set; }
-        [Required(ErrorMessage = "La Posicion es Obligatorio")]
 
+        [Required(ErrorMessage = "La Posicion es Obligatorio")]
         public string Posicion { get; set; }
 
+        public Equipo Equipo { get; set; }
         
     }
 }

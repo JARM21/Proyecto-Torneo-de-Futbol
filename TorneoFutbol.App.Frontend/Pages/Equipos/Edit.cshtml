@@ -1,0 +1,50 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.Pages.Equipos.EditModel
+@{
+}
+<h1>Actualizar Equipo</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Equipo.Id"></label>
+        <input asp-for="Equipo.Id" class="form-control" readonly>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Equipo.Nombre"></label>
+        <input asp-for="Equipo.Nombre" class="form-control" placeholder="Ingrese el nombre del equipo">
+        <span class="text-danger" asp-validation-for="Equipo.Nombre"></span>
+    </div>  
+    <div class="form-group">
+        <label asp-for="Equipo.CantidadPartidosJugados"></label>
+        <input asp-for="Equipo.CantidadPartidosJugados" class="form-control" placeholder="Ingrese la cantidad de partidos jugados">
+        <span class="text-danger" asp-validation-for="Equipo.CantidadPartidosJugados"></span>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Equipo.CantidadPartidosGanados"></label>
+        <input asp-for="Equipo.CantidadPartidosGanados" class="form-control" placeholder="Ingrese la cantidad de partidos ganados">
+        <span class="text-danger" asp-validation-for="Equipo.CantidadPartidosGanados"></span>
+    </div>  
+    <div class="form-group">
+        <label asp-for="Equipo.CantidadPartidosEmpatados"></label>
+        <input asp-for="Equipo.CantidadPartidosEmpatados" class="form-control" placeholder="Ingrese la cantidad de partidos empatados">
+        <span class="text-danger" asp-validation-for="Equipo.CantidadPartidosEmpatados"></span>
+    </div>  
+    <div class="form-group">
+        <label asp-for="Equipo.GolesAFavor"></label>
+        <input asp-for="Equipo.GolesAFavor" class="form-control" placeholder="Ingrese la cantidad de goles a favor">
+        <span class="text-danger" asp-validation-for="Equipo.GolesAFavor"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Equipo.GolesEnContra"></label>
+        <input asp-for="Equipo.GolesEnContra" class="form-control" placeholder="Ingrese la cantidad de goles en contra">
+        <span class="text-danger" asp-validation-for="Equipo.GolesEnContra"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Equipo.Puntos"></label>
+        <input asp-for="Equipo.Puntos" class="form-control" placeholder="Ingrese la cantidad de puntos">
+        <span class="text-danger" asp-validation-for="Equipo.Puntos"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Actualizar Equipo</button> 
+</form>
+<br><br><a class="btn btn-secondary" asp-page="./Index">Volver</a>
+
+

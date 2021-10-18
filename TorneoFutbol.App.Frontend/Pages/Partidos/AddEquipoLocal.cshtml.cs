@@ -26,11 +26,11 @@ namespace TorneoFutbol.App.Frontend.Pages.Partidos
             partido = _repoPartido.GetPartido(Id);
             equipo = _repoEquipo.GetAllEquipos();
         }
-
+        /*
         public IActionResult OnPost(int IdPartido, int IdEquipo)
         {
             _repoPartido.AsignarEquipolocal(IdPartido, IdEquipo);
             return RedirectToPage("Details", new{Id = IdPartido});
-        }
+        }*/
     }
 }

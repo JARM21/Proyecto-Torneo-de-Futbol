@@ -26,7 +26,7 @@ namespace TorneoFutbol.App.Frontend.Pages.Partidos
             partido = _repoPartido.GetPartido(Id);
             arbitro = _repoArbitro.GetAllArbitros();
         }
-
+        
         public IActionResult OnPost(int IdPartido, int IdArbitro)
         {
             _repoPartido.AsignarArbitro(IdPartido, IdArbitro);

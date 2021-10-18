@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace TorneoFutbol.App.Servivios
+namespace TorneoFutbol.App.Servicios
 {
     public class Startup
     {

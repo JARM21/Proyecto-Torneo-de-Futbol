@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbol.App.Persistencia
 {
@@ -32,7 +33,12 @@ namespace TorneoFutbol.App.Persistencia
 
         Estadio IRepositorioEstadios.GetEstadio(int idEstadio)
         {
-            return _appContext.Estadios.FirstOrDefault(e=>e.Id==idEstadio);
+            var estadio = _appContext.Estadios
+                .Where(e => e.Id == idEstadio)
+                .Include(e => e.Municipio)
+                .FirstOrDefault();
+            return estadio;
+            //return _appContext.Estadios.FirstOrDefault(e=>e.Id==idEstadio);
             
         }
 
@@ -49,5 +55,20 @@ namespace TorneoFutbol.App.Persistencia
             }
             return estadioEncontrado;
         }
+
+        Municipio IRepositorioEstadios.AsignarMunicipio(int IdEstadio, int IdMunicipio)
+        { 
+            var estadioEncontrado = _appContext.Estadios.Find(IdEstadio);
+            if (estadioEncontrado != null)
+            { var municipioEncontrado = _appContext.Municipios.Find(IdMunicipio);
+            if (municipioEncontrado != null)
+            { estadioEncontrado.Municipio = municipioEncontrado;
+            _appContext.SaveChanges();
+            }
+            return municipioEncontrado;
+            }
+            return null;
+        }
+
     }
 }

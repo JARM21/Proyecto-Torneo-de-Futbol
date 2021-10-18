@@ -19,7 +19,10 @@ namespace TorneoFutbol.App.Frontend.Pages.Jugadores
         {
             _repoJugador = repoJugador;
         }
-     
+        public void OnGet()
+        {
+            jugador = _repoJugador.GetAllJugador();
+        }
         
     }
 }

@@ -9,9 +9,9 @@
     <thead class="thead-dark">
         <tr>
             <th scope="col">Nombre</th>
-            <th scope="col">CantidadPartidosJugados</th>
-            <th scope="col">CantidadPartidosGanados</th>
-            <th scope="col">CantidadPartidosEmpatados</th>
+            <th scope="col">Partidos</th>
+            <th scope="col">Ganados</th>
+            <th scope="col">Empatados</th>
             <th scope="col">GolesAFavor</th>
             <th scope="col">GolesEnContra</th>
             <th scope="col">Puntos</th>
@@ -29,7 +29,10 @@
                 <td>@equipo.GolesAFavor</td>
                 <td>@equipo.GolesEnContra</td>
                 <td>@equipo.Puntos</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@equipo.Id">Detalle</a></td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@equipo.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@equipo.Id">Editar</a>
+                </td>
             </tr>
         }
         

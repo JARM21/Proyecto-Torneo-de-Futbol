@@ -12,14 +12,18 @@ namespace TorneoFutbol.App.Frontend.Pages.Jugadores
     public class CreateModel : PageModel
     {
         private readonly IRepositorioJugadores _repoJugador;
+        private readonly IRepositorioEquipos _repoEquipo;
         public Jugador jugador {get; set;}
-        public CreateModel(IRepositorioJugadores repoJugador)
+        public IEnumerable<Equipo> equipos {get; set;}
+        public CreateModel(IRepositorioJugadores repoJugador, IRepositorioEquipos repoEquipo)
         {
             _repoJugador = repoJugador;
+            _repoEquipo = repoEquipo;
         }
         public void OnGet()
         {
              jugador = new Jugador();
+             equipos = _repoEquipo.GetAllEquipos();
         }
 
         public IActionResult OnPost(Jugador jugador)

@@ -8,9 +8,12 @@
 <table class="table">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">MarcadorInicialLocal</th>
-            <th scope="col">MarcadorInicialVisitante</th>
-            <th scope="col">MarcadorFinal</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Equipo Local</th>
+            <th scope="col">Equipo Visitante</th>
+            <th scope="col">Marcador Inicial Local</th>
+            <th scope="col">Marcador Inicial Visitante</th>
+            <th scope="col">Marcador Final</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -18,10 +21,16 @@
         @foreach (var partido in Model.partido)
         {
             <tr>
+                <td>@partido.FechaYHora</td>
+                <td>@partido.EquipoLocal</td>
+                <td>@partido.EquipoVisitante</td>
                 <td>@partido.MarcadorInicialLocal</td>
                 <td>@partido.MarcadorInicialVisitante</td>
-                <td>@partido.MarcadorFinal</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@partido.Id">Detalle</a></td>
+                <td>@partido.MarcadorFinalLocal</td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@partido.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@partido.Id">Editar</a>
+                </td>
             </tr>
         }
         

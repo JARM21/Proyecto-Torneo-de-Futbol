@@ -21,7 +21,10 @@
                 <td>@jugador.Nombre</td>
                 <td>@jugador.Numero</td>
                 <td>@jugador.Posicion</td>
-                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a></td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalle</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@jugador.Id">Editar</a>
+                </td>
             </tr>
         }
         

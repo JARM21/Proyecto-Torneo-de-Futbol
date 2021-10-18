@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbol.App.Persistencia
 {
@@ -32,7 +33,15 @@ namespace TorneoFutbol.App.Persistencia
 
         Partido IRepositorioPartidos.GetPartido(int idPartido)
         {
-            return _appContext.Partidos.FirstOrDefault(p=>p.Id==idPartido);
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.EquipoLocal)
+                .Include(p => p.EquipoVisitante)
+                .Include(p => p.Estadio)
+                .Include(p => p.Arbitro)
+                .FirstOrDefault();
+            return partido;
+            //return _appContext.Partidos.FirstOrDefault(p=>p.Id==idPartido);
             
         }
 
@@ -42,17 +51,67 @@ namespace TorneoFutbol.App.Persistencia
             if(partidoEncontrado!=null)
             {
                 partidoEncontrado.FechaYHora = partidoEncontrado.FechaYHora;
-                partidoEncontrado.EquipoLocal = partidoEncontrado.EquipoLocal;
-                partidoEncontrado.MarcadorInicialLocal = partidoEncontrado.MarcadorInicialLocal;
-                partidoEncontrado.EquipoVisitante = partidoEncontrado.EquipoVisitante;
-                partidoEncontrado.MarcadorInicialVisitante = partidoEncontrado.MarcadorInicialVisitante;
                 partidoEncontrado.Estadio = partidoEncontrado.Estadio;
                 partidoEncontrado.Arbitro = partidoEncontrado.Arbitro;
-                partidoEncontrado.MarcadorFinal = partidoEncontrado.MarcadorFinal;
+                partidoEncontrado.MarcadorFinalLocal = partidoEncontrado.MarcadorFinalLocal;
+                //partidoEncontrado.MarcadorFinalVisitante = partidoEncontrado.MarcadorFinalVisitante;
                 
                 _appContext.SaveChanges();
             }
             return partidoEncontrado;
+        }
+
+        Equipo IRepositorioPartidos.AsignarEquipoLocal(int idPartido, int idEquipoLocal)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(idPartido);
+            if (partidoEncontrado != null)
+            { var equipoEncontrado = _appContext.Equipos.Find(idEquipoLocal);
+            if (equipoEncontrado != null)
+            { partidoEncontrado.EquipoLocal = equipoEncontrado;
+            _appContext.SaveChanges();
+            }
+            return equipoEncontrado;
+            }
+            return null; 
+        }
+        Equipo IRepositorioPartidos.AsignarEquipoVisitante(int idPartido, int idEquipoVisitante)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(idPartido);
+            if (partidoEncontrado != null)
+            { var equipoEncontrado = _appContext.Equipos.Find(idEquipoVisitante);
+            if (equipoEncontrado != null)
+            { partidoEncontrado.EquipoVisitante = equipoEncontrado;
+            _appContext.SaveChanges();
+            }
+            return equipoEncontrado;
+            }
+            return null; 
+        }
+        Estadio IRepositorioPartidos.AsignarEstadio(int idPartido, int idEstadio)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(idPartido);
+            if (partidoEncontrado != null)
+            { var estadioEncontrado = _appContext.Estadios.Find(idEstadio);
+            if (estadioEncontrado != null)
+            { partidoEncontrado.Estadio = estadioEncontrado;
+            _appContext.SaveChanges();
+            }
+            return estadioEncontrado;
+            }
+            return null; 
+        }
+        Arbitro IRepositorioPartidos.AsignarArbitro(int idPartido, int idArbitro)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(idPartido);
+            if (partidoEncontrado != null)
+            { var arbitroEncontrado = _appContext.Arbitros.Find(idArbitro);
+            if (arbitroEncontrado != null)
+            { partidoEncontrado.Arbitro = arbitroEncontrado;
+            _appContext.SaveChanges();
+            }
+            return arbitroEncontrado;
+            }
+            return null; 
         }
     }
 }
