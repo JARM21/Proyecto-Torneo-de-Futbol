@@ -14,5 +14,9 @@ namespace TorneoFutbol.App.Persistencia
         void DeleteEquipos(int IdEquipos);
 
         Equipo GetEquipos(int IdEquipos);
+
+        Municipio AsignarMunicipio(int IdEquipo, int IdMunicipio);
+
+        DirectorTecnico AsignarDirectorTecnico(int IdEquipo, int IdDirectorTecnico);
     }
 }

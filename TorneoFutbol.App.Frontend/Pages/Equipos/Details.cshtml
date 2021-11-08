@@ -33,15 +33,49 @@
         <tr>
             <th scope="col">Puntos</th>
             <td>@Model.equipo.Puntos</td>
-        </tr>
+        </tr>       
+        <tr>
+            <th scope="col">Municipio</th>
+            @if (Model.equipo.Municipio == null)
+            {
+                <th>
+                    <a class="btn btn-secondary" asp-page="./AddMunicipio" asp-route-id="@Model.equipo.Id">
+                        AsignarMunicipio
+                    </a>
+                </th>
+            }
+            else
+            {
+                <td>@Model.equipo.Municipio.Nombre</td>
+            }
             
-           
+        </tr>  
+        <tr>
+            <th scope="col">DirectorTecnico</th>
+            @if (Model.equipo.DirectorTecnico == null)
+            {
+                <th>
+                    <a class="btn btn-secondary" asp-page="./AddDirectorTecnico" asp-route-id="@Model.equipo.Id">AsignarDirectorTecnico</a>
+                </th>
+            }
+            else
+            {
+                <td>@Model.equipo.DirectorTecnico.Nombre</td>
+            }
             
-            
-            
-            
-            
-            
+        </tr>     
+        <tr>
+             <th scope="col">Jugadores</th>
+             <td>
+                 <ul>
+                     @foreach (var jugador in Model.equipo.Jugadores)
+                     {
+                        <li>@jugador.Nombre = @jugador.Posicion</li>     
+                     }
+                 </ul>
+                  <a class="btn btn-secondary" asp-page="./AddJugador" asp-route-id="@Model.equipo.Id">Asignar Jugador</a>
+             </td>
+        </tr>   
         
 </table>
 

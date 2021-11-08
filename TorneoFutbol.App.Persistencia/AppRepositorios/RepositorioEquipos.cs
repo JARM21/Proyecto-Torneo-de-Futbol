@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using TorneoFutbol.App.Dominio;
 
@@ -30,9 +31,14 @@ namespace TorneoFutbol.App.Persistencia
             return _appContext.Equipos;
         }
 
-        Equipo IRepositorioEquipos.GetEquipos(int IdEquipos)
+        public Equipo GetEquipos(int IdEquipos)
         {
-            return _appContext.Equipos.FirstOrDefault(m=>m.Id==IdEquipos);
+            var equipo = _appContext.Equipos
+                .Where(p => p.Id == IdEquipos)
+                .Include(p => p.Municipio)
+                .Include(p => p.DirectorTecnico)
+                .FirstOrDefault();
+            return equipo;
             
         }
 
@@ -52,6 +58,32 @@ namespace TorneoFutbol.App.Persistencia
                 _appContext.SaveChanges();
             }
             return EquipoEncontrado;
+        }
+
+        Municipio IRepositorioEquipos.AsignarMunicipio(int IdEquipo, int IdMunicipio)
+        { var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
+            if (equipoEncontrado != null)
+            { var municipioEncontrado = _appContext.Municipios.Find(IdMunicipio);
+            if (municipioEncontrado != null)
+            { equipoEncontrado.Municipio = municipioEncontrado;
+            _appContext.SaveChanges();
+            }
+            return municipioEncontrado;
+            }
+            return null;
+        }
+
+        DirectorTecnico IRepositorioEquipos.AsignarDirectorTecnico(int IdEquipo, int IdDirectorTecnico)
+        { var equipoEncontrado = _appContext.Equipos.Find(IdEquipo);
+            if (equipoEncontrado != null)
+            { var directortecnicoEncontrado = _appContext.DirectoresTecnicos.Find(IdDirectorTecnico);
+            if (directortecnicoEncontrado != null)
+            { equipoEncontrado.DirectorTecnico = directortecnicoEncontrado;
+            _appContext.SaveChanges();
+            }
+            return directortecnicoEncontrado;
+            }
+            return null;
         }
     }
 }
