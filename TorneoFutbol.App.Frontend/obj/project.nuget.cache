@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MF3VdxOSSJIS9OtiAUNOgs1eE53WqPbh2TrkEIZy7pC08zYFnPphc2E6GgC92WOQdKHfiQF7CethFZgP5P0Yvw==",
+  "dgSpecHash": "b+Df4xg2Ul0JARbS2qfLm23dr/UefBEuD0RduPl1WiAbW1IehdXrj55miulrvUEr2iBT/hPzg02FjbnR02trTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
+  "projectFilePath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol - copiabuena\\TorneoFutbol.App\\TorneoFutbol.App.Frontend\\TorneoFutbol.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
