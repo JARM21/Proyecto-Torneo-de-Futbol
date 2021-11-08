@@ -50,3 +50,15 @@ D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\obj\Debug
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
 D:\Proyecto Ciclo 3\Proyecto-Torneo-de-Futbol\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
 >>>>>>> 14f503baa826c5b36d55961af0553170b41d8714
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.deps.json
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.dll
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\bin\Debug\net5.0\TorneoFutbol.App.Dominio.pdb
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.AssemblyInfo.cs
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.dll
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbol.App.Dominio.dll
+C:\Users\josue\Mision TIC 2022 Ciclo 3\Proyecto Torneo de Futbol - copiabuena\TorneoFutbol.App\TorneoFutbol.App.Dominio\obj\Debug\net5.0\TorneoFutbol.App.Dominio.pdb

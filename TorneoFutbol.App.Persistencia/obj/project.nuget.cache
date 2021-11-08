@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+SUJjkvZmbHKUCvEp3cn3aOuvfZgU3UBOiL/n6RrE5WT3qNIH9mBrl2PQ4ZXQXtfhC77gQp+wPulYkDvySqxFw==",
+  "dgSpecHash": "edzrC0n9tZxnKFgmMyuEisJkBwIoC2kgxJsOd9gxI8aBxxCEZehcAzL8Dv5oZkQN1SSFbUU7hPM1dvhOWktBSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol\\TorneoFutbol.App\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\josue\\Mision TIC 2022 Ciclo 3\\Proyecto Torneo de Futbol - copiabuena\\TorneoFutbol.App\\TorneoFutbol.App.Persistencia\\TorneoFutbol.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josue\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
